@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, redirect, url_for, send_from_directory
 
 # Setup Flask app.
@@ -17,4 +18,6 @@ def static_proxy(path):
 
 
 if __name__ == '__main__':
-  app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
