@@ -1,0 +1,152 @@
+html {
+    background: url('/images/palesand.gif') repeat 0 0; 
+}
+body {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    background: #eee;
+
+    margin: 0 auto;
+    width: 700px;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+   body {
+        width: 615px;
+    }
+}
+@media (max-width: 683px) {
+   body {
+        width: 550px;
+    }
+}
+@media (max-width: 600px) {
+   body {
+        width: 485px;
+    }
+}
+@media (max-width: 540px) {
+   body {
+        width: 431px;
+    }
+}
+@media (max-width: 450px) {
+   body {
+        width: 345px;
+    }
+}
+@media (max-width: 360px) {
+   body {
+        width: 288px;
+    }
+}
+
+.kanji-background {
+    background: url('/images/KanjiBackground.gif') repeat 0 0; 
+}
+
+.header-text {
+    font-family: Candara;
+    font-weight: 700;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+a.plain {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.main-image {
+    position: relative;
+    //margin: 0 1px;
+}
+
+img.main-image {
+    width: 100%;
+}
+
+div.main-overlay {
+    position: absolute;
+    bottom: -0.5em;
+    right: 0.5em;
+    z-index: 1000;
+}
+
+div.main-overlay > p {
+    color: white;
+    float: right;
+    font-size: 4em;
+}
+
+@media (max-width: 767px) {
+    div.main-overlay > p {
+        font-size: 2em;
+    }
+}
+@media (max-width: 360px) {
+    div.main-overlay > p {
+        font-size: 1.5em;
+    }
+}
+
+
+table.contact {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    margin 0 1px;;
+}
+
+td.contact {
+    width: 50%;
+    border: 1px solid black;
+}
+
+td.contact:hover {
+    background: #ffa;
+}
+
+.contact-btn {
+    white-space: normal;
+    height: 100%;
+    padding: 0px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.page {
+    margin-left: 2em;
+    margin-right: 4em;
+}
+@media (max-width: 767px) {
+   .page {
+        margin-left: 0.5em;
+        margin-right: 1em;
+    }
+}
+
+ul.big-list > li {
+    margin-bottom: 1em;
+}
+
+.boxShadow--sm {
+    border: 0px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.boxShadow--md {
+    border: 0px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.boxShadow--lg {
+    border: 0px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+
+.boxShadow--xl {
+    border: 0;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+}
