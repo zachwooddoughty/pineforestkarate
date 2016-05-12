@@ -6,39 +6,16 @@ body {
     background: #eee;
 
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     font-size: 18px;
 }
-@media (max-width: 767px) {
-   body {
-        width: 615px;
-    }
-}
-@media (max-width: 683px) {
-   body {
-        width: 550px;
-    }
-}
-@media (max-width: 600px) {
-   body {
-        width: 485px;
-    }
-}
-@media (max-width: 540px) {
-   body {
-        width: 431px;
-    }
-}
-@media (max-width: 450px) {
-   body {
-        width: 345px;
-    }
-}
-@media (max-width: 360px) {
-   body {
-        width: 288px;
-    }
-}
+@media (max-width: 950px) { body { width: 800px; } }
+@media (max-width: 850px) { body { width: 700px; } }
+@media (max-width: 750px) { body { width: 600px; } }
+@media (max-width: 650px) { body { width: 510px; } }
+@media (max-width: 550px) { body { width: 420px; } }
+@media (max-width: 450px) { body { width: 330px; } }
+@media (max-width: 350px) { body { width: 300px; } }
 
 .kanji-background {
     background: url('/images/KanjiBackground.gif') repeat 0 0; 

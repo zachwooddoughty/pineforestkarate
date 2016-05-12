@@ -14,7 +14,6 @@ def root():
 @app.route('/<path:path>')
 def static_proxy(path):
   # send_static_file will guess the correct MIME type
-  print os.listdir('static/images')
   return app.send_static_file(path)
 
 
