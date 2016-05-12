@@ -25,53 +25,6 @@ body {
     background: white;
 }
 
-.cover-background {
-    background: url('/images/mary_cover.jpg') no-repeat fixed;
-    background-size: 60%;
-    background-position: 100% 0%;
-}
-@media (max-width: 500px) {
-    .cover-background {
-        background: white;
-    }
-}
-
-.menu-col {
-    width: 40%;
-    min-height: 15em;
-}
-@media (max-width: 500px) {
-    .menu-col {
-        width: 100%;
-        min-height: 5em;
-    }
-}
-
-.menu-items {
-
-}
-.menu-item {
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-
-}
-.menu-item > a {
-    text-decoration: none;
-    color: inherit;
-}
-
-@media (max-width: 500px) {
-    .menu-items {
-        padding: 0, -15px; 
-    }
-    .menu-item {
-        padding: 0, 15px;
-        float: left;
-        width: 50%;
-    }
-
-}
 
 .logo-holder {
     display: table;
@@ -112,6 +65,36 @@ img.main-image {
 .no-padding-col {
     padding: 0;
 }
+
+.menu-col {
+    border: 0px;
+    box-shadow:  0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+
+div.main-overlay {
+    position: absolute;
+    bottom: -0.5em;
+    right: 0.5em;
+    z-index: 1000;
+}
+
+div.main-overlay > p {
+    color: white;
+    float: right;
+    font-size: 4em;
+}
+
+@media (max-width: 767px) {
+    div.main-overlay > p {
+        font-size: 2em;
+    }
+}
+@media (max-width: 360px) {
+    div.main-overlay > p {
+        font-size: 1.5em;
+    }
+}
+
 
 table.contact {
     text-align: center;
