@@ -7,15 +7,15 @@ app.debug = True
 
 
 # Routes
+@app.route('/css/<path:path>')
+def static_files():
+  return app.send_static_file('/static/' + path)
+
+
 @app.route('/')
-def root():
-  return app.send_static_file('index.html')
-
-@app.route('/<path:path>')
-def static_proxy(path):
-  # send_static_file will guess the correct MIME type
-  return app.send_static_file(path)
-
+@app.route('/<path>')
+def pages(path="index"):
+    return app.send_static_file(path + ".html")
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
