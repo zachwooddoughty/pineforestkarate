@@ -3,12 +3,12 @@ html {
 }
 body {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
-    background: #eee;
 
     margin: 0 auto;
     width: 900px;
     overflow-y: scroll;
     font-size: 18px;
+    font-family: Tahoma, Arial, Helvetica;
 }
 @media (max-width: 950px) { body { width: 800px; } }
 @media (max-width: 850px) { body { width: 700px; } }
@@ -29,10 +29,19 @@ body {
     background: white;
 }
 
+.grey-background {
+    background: url('https://i.imgur.com/qFtA9Vq.jpg') repeat 0 0;
+}
+
 .pretty-image {
-    height: 10em;
-    margin: 0 10px;
+    height: 15em;
+    margin: 10px;
     overflow: hidden;
+}
+@media (max-width: 650px) {
+    .pretty-image {
+        height: 10em;
+    }
 }
 
 .pretty-image > div {
@@ -50,7 +59,8 @@ body {
 }
 
 .menu-col {
-    width: 40%;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+    width: 30%;
     float: left;
 }
 @media (max-width: 650px) {
@@ -61,7 +71,7 @@ body {
 }
 
 .image-col {
-    width: 60%;
+    width: 70%;
     float: left;
 }
 @media (max-width: 650px) {
@@ -71,7 +81,7 @@ body {
 }
 
 .menu-items {
-    padding-right: 20px;
+    padding-right: 10px;
     border-top: 2px grey solid;
     border-bottom: 1px grey solid;
 }
@@ -119,6 +129,7 @@ body {
     display: table;
     text-align: center;
     vertical-align: middle;
+    margin: 10px 0;
 }
 
 .logo-holder > h2 {
@@ -131,7 +142,6 @@ body {
     width: 100px;
     float: left;
 }
-
 
 .header-text {
     font-family: Candara;
