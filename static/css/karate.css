@@ -7,6 +7,7 @@ body {
 
     margin: 0 auto;
     width: 900px;
+    overflow-y: scroll;
     font-size: 18px;
 }
 @media (max-width: 950px) { body { width: 800px; } }
@@ -17,31 +18,21 @@ body {
 @media (max-width: 450px) { body { width: 330px; } }
 @media (max-width: 350px) { body { width: 300px; } }
 
-.kanji-background {
+.text {
+    padding: 10px;
+    margin: 10px;
     background: url('/static/images/KanjiBackground.gif') repeat 0 0; 
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
 }
 
 .white-background {
     background: white;
 }
 
-.cover-background {
-    background: url('/static/images/mary_cover.jpg') no-repeat fixed;
-    background-size: 60%;
-    background-position: 100% 0%;
-}
-@media (max-width: 650px) {
-    .cover-background {
-        background: white;
-    }
-}
-
 .pretty-image {
     height: 10em;
-    margin: 0 auto;
+    margin: 0 10px;
     overflow: hidden;
-
-    //border-style
 }
 
 .pretty-image > div {
@@ -96,8 +87,7 @@ body {
     width: 100%;
     text-align: center;
     vertical-align: middle;
-    padding: 10px 0;
-    //border-bottom: 1px solid black;
+    padding: 20px 0;
 }
 
 .menu-item.active-item > div {
@@ -120,6 +110,7 @@ body {
     }
     .menu-item > div{
         border-left: 10px #eee solid;
+        padding: 10px 0;
     }
 
 }
@@ -136,21 +127,17 @@ body {
     vertical-align: middle;
 }
 
+.logo-holder > img {
+    width: 100px;
+    float: left;
+}
+
+
 .header-text {
     font-family: Candara;
     font-weight: 700;
 }
 
-.welcome-body {
-    padding: 10px;
-    margin: 10px;
-}
-
 ul.big-list > li {
     margin-bottom: 1em;
-}
-
-.boxShadow--md {
-    border: 0px;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
 }
