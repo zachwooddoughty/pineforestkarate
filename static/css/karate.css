@@ -202,14 +202,30 @@ body {
 
 .gallery-preview > div > img {
     float: left;
-    height: 5em;
+    max-height: 5em;
     margin-right: 2em;
 }
 
 @media (max-width: 650px) {
-    .gallery-preview > div > img {
-        margin-right: 1em;
+    .gallery-preview {
+        text-align: center;
      }
+}
+
+@media (max-width: 650px) {
+    .gallery-preview > div > img {
+        margin: 1em 0 0 0;
+        float: none;
+        clear: both;
+     }
+}
+
+.gallery-item {
+    max-width: 100%;
+}
+
+.gallery-item > td {
+    max-width: 50%;
 }
 
 /* FAQ Styling */
