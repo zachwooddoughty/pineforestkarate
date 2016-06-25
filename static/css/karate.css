@@ -21,6 +21,7 @@ body {
 .text {
     padding: 10px;
     margin: 10px;
+    line-height: 1.5;
     background: url('/static/images/KanjiBackground.gif') repeat 0 0; 
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
 }
@@ -30,7 +31,17 @@ body {
 }
 
 .grey-background {
-    background: url('https://i.imgur.com/qFtA9Vq.jpg') repeat 0 0;
+    background: #eee;
+    //background: url('https://i.imgur.com/qFtA9Vq.jpg') repeat 0 0;
+}
+
+
+.mobile-hidden {
+}
+@media (max-width: 650px) {
+    .mobile-hidden {
+        display: none;
+    }
 }
 
 .pretty-image {
@@ -150,4 +161,47 @@ body {
 
 ul.big-list > li {
     margin-bottom: 1em;
+}
+
+/* Gallery styling */
+
+.gallery-preview  {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gallery-preview > div {
+    height: 5em;
+    background: white;
+    margin-bottom: 2em;
+
+    border: 1px grey solid;
+    border-radius: 2px;
+}
+
+.gallery-preview > div > p {
+    margin: 0px;
+}
+
+.gallery-preview > div > img {
+    float: left;
+    height: 5em;
+    margin-right: 2em;
+}
+
+@media (max-width: 650px) {
+    .gallery-preview > div > img {
+        margin-right: 1em;
+     }
+}
+
+
+.faq-item {
+    margin-bottom: 3em;
+}
+
+.faq-item > h3 {
+    border-top: 1px black solid;
+    background: #ddd;
+    padding: 5px;
 }
