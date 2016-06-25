@@ -35,6 +35,10 @@ body {
     //background: url('https://i.imgur.com/qFtA9Vq.jpg') repeat 0 0;
 }
 
+.float-left {
+    float: left;
+    margin-right: 1em;
+}
 
 .mobile-hidden {
 }
@@ -159,8 +163,21 @@ body {
     font-weight: 700;
 }
 
-ul.big-list > li {
+.big-list > li {
     margin-bottom: 1em;
+}
+
+.full-table {
+    width: 100%;
+
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    text-align: center;
+}
+
+.full-table > tbody > tr > td {
+    border: 1px solid black;
 }
 
 /* Gallery styling */
@@ -171,7 +188,7 @@ ul.big-list > li {
 }
 
 .gallery-preview > div {
-    height: 5em;
+    min-height: 5em;
     background: white;
     margin-bottom: 2em;
 
@@ -195,6 +212,7 @@ ul.big-list > li {
      }
 }
 
+/* FAQ Styling */
 
 .faq-item {
     margin-bottom: 3em;
@@ -204,4 +222,8 @@ ul.big-list > li {
     border-top: 1px black solid;
     background: #ddd;
     padding: 5px;
+}
+
+.faq-item > p {
+    margin-left: 10px;
 }
